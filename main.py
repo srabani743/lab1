@@ -31,17 +31,19 @@ print("4.Mnożenie")
 
 dzialanie = input("Wybierz dzialanie(podaj cyfre): ")
 
-l1 = float(input("Wybierz 1 liczbe: "))
-l2 = float(input("Wybierz 2 liczbe: "))
-
-if dzialanie == "1":
-    print(l1, "+", l2, "=", l1+l2)
-elif dzialanie == "2":
-    print(l1, "-", l2, "=", l1-l2)
-elif dzialanie == "3":
-    print(l1, "/", l2, "=", l1 / l2)
-elif dzialanie == "4":
-    print(l1, "*", l2, "=", l1 * l2)
+if dzialanie in ("1", "2", "3", "4"):
+    l1 = float(input("Wybierz 1 liczbe: "))
+    l2 = float(input("Wybierz 2 liczbe: "))
+    if dzialanie == "1":
+        print(l1, "+", l2, "=", l1+l2)
+    elif dzialanie == "2":
+        print(l1, "-", l2, "=", l1-l2)
+    elif dzialanie == "3":
+        print(l1, "/", l2, "=", l1 / l2)
+    elif dzialanie == "4":
+        print(l1, "*", l2, "=", l1 * l2)
+else:
+    print("Nieprawidlowy numer dzialania")
 
 # Zad3. Napisz skrypt, w którym stworzysz operatory przyrostkowe dla operacji: +, -, *, /, **, %
 
